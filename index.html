@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sheet.css" .css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main2.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div id="gory">
+        <div id="interface">
+
+            <div class="input_text">
+                <label for="_name" class="id">Nazwa obszaru</label>
+                <input type="text" id="_name" class="napis">
+            </div>
+
+            <div class="input_text">
+                <label for="_link">Link do obszaru</label>
+                <input type="text" id="_link" class="input_link">
+            </div>
+
+            <span class="posX">50.7%</span>
+            <span class="posY">50.7%</span>
+            <input type="button" value="dodaj pozycje" id="add_point">
+            <input type="button" value="zmien pozycje" id="change_pos">
+            <input type="button" value="JSON Wł" id="display_JSON">
+        </div>
+        <div class="social_icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="content">
+            <div id="cursor">
+
+            </div>
+            <div class="points">
+
+                <div class="point">
+                    <div class="circle"></div>
+                    <div class="dot"></div>
+                    <div class=""></div>
+                    <div class="issueBox">
+                        <a href="#"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <a class="edit">
+            <div>edit</div>
+        </a>
+        <img src="images/gory-ze-szlakami.jpg" alt="" class="click_catcher" id="main_pic">
+    </div>
+    <div id="JSON"></div>
+
+</body>
+
+</html>

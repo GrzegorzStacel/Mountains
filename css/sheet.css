@@ -1,0 +1,454 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap&subset=latin-ext);
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#gory {
+  position: relative;
+}
+
+#gory img {
+  display: block;
+  width: 100%;
+}
+
+#gory .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#gory .content #cursor {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+#gory .content .points .point {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.5);
+  width: 17px;
+  height: 17px;
+  border-radius: 40px;
+  border: 1px solid #000;
+  -webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  -webkit-animation: animate 2s linear infinite alternate;
+          animation: animate 2s linear infinite alternate;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#gory .content .points .point:hover {
+  z-index: 2;
+  border: none;
+  background: none;
+  -webkit-animation: none;
+          animation: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#gory .content .points .point:hover .circle_link {
+  width: 100%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  border-radius: 30px;
+}
+
+#gory .content .points .point:hover .circle {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border: 2px dotted white;
+  border-radius: 70px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 25px 5px #fff;
+          box-shadow: 0 0 25px 5px #fff;
+  -webkit-animation: animate_hover 0.5s linear infinite;
+          animation: animate_hover 0.5s linear infinite;
+}
+
+#gory .content .points .point:hover .dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #000;
+  border-radius: 20px;
+  width: 8px;
+  height: 8px;
+}
+
+#gory .content .points .point:hover .stroke_left_top {
+  background: url("../images/stroke/stroke-right-bottom.png") no-repeat;
+  position: absolute;
+  top: 55px;
+  left: 75px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 120px;
+  height: 90px;
+}
+
+#gory .content .points .point:hover .stroke_right_top {
+  background: url("../images/stroke/stroke-left-bottom.png") no-repeat;
+  position: absolute;
+  top: 45px;
+  left: -95px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 70px;
+}
+
+#gory .content .points .point:hover .stroke_right_bottom {
+  background: url("../images/stroke/stroke-left-top.png") no-repeat;
+  position: absolute;
+  top: -33px;
+  left: -95px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 80px;
+}
+
+#gory .content .points .point:hover .stroke_left_bottom {
+  background: url("../images/stroke/stroke-right-top.png") no-repeat;
+  position: absolute;
+  top: -32px;
+  left: 70px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 120px;
+  height: 75px;
+}
+
+#gory .content .points .point .issueBox a {
+  display: none;
+}
+
+#gory .content .points .point:hover .issueBox {
+  width: 12px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 44px;
+  left: 100px;
+}
+
+#gory .content .points .point:hover .issueBox a {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+  background: #b9b9c1;
+  height: 40px;
+  text-align-last: center;
+  color: #fff;
+  font-size: 23px;
+  text-decoration: none;
+  border: 1px solid #000;
+  -webkit-box-shadow: 1px 0 4px black;
+          box-shadow: 1px 0 4px black;
+  padding: 0 20px;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 70px 70px 0;
+}
+
+#gory .content .points .point:hover .issueBox a:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#gory .content .points .point:hover .issueBox.right_top {
+  top: 45px;
+  left: -96px;
+}
+
+#gory .content .points .point:hover .issueBox.right_top a {
+  left: auto;
+  right: 16px;
+  border-radius: 70px 0 0 70px;
+}
+
+#gory .content .points .point:hover .issueBox.left_bottom {
+  top: -66px;
+  left: 100px;
+}
+
+#gory .content .points .point:hover .issueBox.right_bottom {
+  top: -69px;
+  left: -95px;
+}
+
+#gory .content .points .point:hover .issueBox.right_bottom a {
+  left: auto;
+  right: 16px;
+  border-radius: 70px 0 0 70px;
+}
+
+#gory .edit {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 60px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#gory .edit div {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+}
+
+#gory .edit:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+#gory .edit:hover div {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
+
+@-webkit-keyframes animate_hover {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes animate_hover {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    background: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+#interface {
+  position: fixed;
+  padding: 30px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 0 10px 10px 0;
+}
+
+#interface .input_text {
+  display: inline-block;
+  position: relative;
+}
+
+#interface .input_text .filled {
+  background: #59bf59;
+  border: 1px solid #ed6811;
+}
+
+#interface .input_text label {
+  position: absolute;
+  z-index: 2;
+  top: 4px;
+  left: 20px;
+  color: gray;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#interface .input_text.focus label {
+  top: -20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#interface input {
+  margin: 0 5px;
+  padding: 6px;
+}
+
+#interface span[class*="pos"] {
+  display: inline-block;
+  color: #ddd;
+  background: #333;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+#interface.switched {
+  bottom: 0;
+}
+
+.on_interface {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+}
+
+#main_pic.active {
+  -webkit-filter: blur(4px) brightness(80%);
+          filter: blur(4px) brightness(80%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.social_icons {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 2;
+}
+
+.social_icons a {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-left: 15px;
+  opacity: 0.4;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  border-radius: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social_icons a i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-size: 30px;
+  color: #444;
+}
+
+.social_icons a:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.55;
+  -webkit-box-shadow: 0 1px 5px black, 0 0 30px white;
+          box-shadow: 0 1px 5px black, 0 0 30px white;
+}
+
+.social_icons a:hover i.fa {
+  border-radius: 50%;
+}
+
+.social_icons a:hover i.fa-facebook {
+  color: white;
+  background: #3b5998;
+}
+
+.social_icons a:hover i.fa-twitter {
+  color: white;
+  background: #55acee;
+}
+
+.social_icons a:hover i.fa-instagram {
+  color: white;
+  background: #2e5e86;
+}
+
+#JSON {
+  max-width: 1200px;
+  background: #eee;
+  margin: 20px auto 20px;
+  padding: 15px;
+  border: 1px solid #000;
+  display: none;
+}
+/*# sourceMappingURL=sheet.css.map */
