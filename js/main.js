@@ -14,6 +14,8 @@ function input_filleed() {
             $(this).addClass('filled');
         } else {
             $(this).parent().removeClass('focus');
+            $(this).removeClass('filled');
+
         }
     })
 }
