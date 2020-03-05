@@ -1,8 +1,22 @@
 # Mountains
 
-This is my #2 second website.
-The mechanism of adding points on the image is implemented, generating its coordinates along with a possible name and link to this point.
+This is my 2# second website.
+The mechanism of adding points on the image is implemented here, generating its coordinates along with any name and link to this point.
 The generated code is enough to copy and paste to the file for added points to be permanently on the page.
+ 
+---------------------------------------------------------------------------------------------------------------------------------------
 
+To jest moja druga strona internetowa.
+Jest tu zaimplementowany mechanizm dodawania punktów na obrazie generujący jego współżędne wraz z ewentualną nazwą i linkiem do tego punktu.
+Wygenerowany kod wystarczy skopiować i wkleić do pliku aby dodane punkty na stałe znalazły się na stronie. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Add the point
 ![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v1.jpg)
+
+Generated the code
 ![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v2.jpg)
+
+After adding the code to the file
+![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v3.jpg)
