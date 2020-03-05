@@ -5,3 +5,4 @@ The mechanism of adding points on the image is implemented, generating its coord
 The generated code is enough to copy and paste to the file for added points to be permanently on the page.
 
 ![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v1.jpg)
+![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v2.jpg)
