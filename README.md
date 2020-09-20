@@ -1,28 +1,40 @@
-# Mountains
+# #2 Mountains - adding points to the image 
+> A mechanism for adding points to the image that generates its coordinates along with a possible name and a link to that point. 
 
-This is my 2# second project.
-The mechanism of adding points on the image is generated here, generating its coordinates along with any name and link to this point.
-The generated code is enough to copy and paste into a file so that the added points are permanently on the page.
- 
-To add a new point, just turn on the edit mode and click on the image, add an optional name and link and press the 'add items' button.
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Status](#status)
+* [Inspiration](#inspiration)
 
- http://provo.webd.pro/mountains/
----------------------------------------------------------------------------------------------------------------------------------------
 
-To jest moj drugi projekt.
-Jest tu zaimplementowany mechanizm dodawania punktów na obrazie generujący jego współrzędne wraz z ewentualną nazwą i linkiem do tego punktu.
-Wygenerowany kod wystarczy skopiować i wkleić do pliku, aby dodane punkty na stałe znalazły się na stronie. 
+## General info
+The project was created as a training and was aimed at eliminating the tedious, manual addition of points on images, e.g. on a page www.bellazone.pl
+![Example screenshot](./img_readme/1.png)
 
-Aby dodać nowy punkt wystarczy włączyć tryb edycji i kliknąć na obrazie, dodać opcjonalnie nazwę oraz link i wcisnąć przycisk 'dodaj pozycje'.
+Just click on the area of interest, add a name and / or link and press the 'dodaj pozycje' button.
+JSON code will be generated, which we can copy to our project.
 
-http://provo.webd.pro/mountains/
------------------------------------------------------------------------------------------------------------------------------------------
+*I did not implement RWD on the website because no developer writes code on a tablet or mobile :)
 
-Add the point
-![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v1.jpg)
+## Screenshots
+![Example screenshot](./img_readme/2.png)
+![Example screenshot](./img_readme/3.png)
+![Example screenshot](./img_readme/4.png)
+![Example screenshot](./img_readme/5.png)
 
-Generated the code
-![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v2.jpg)
+## Technologies
+* CSS - version 3
+* HTML - version 5
+* JavaScript
+* jQuery
+* JSON
+* SCSS
 
-After adding the code to the file
-![alt text](https://github.com/GrzegorzStacel/Mountains/blob/master/images/Imges%20to%20README/Mountains_v3.jpg)
+## Status
+Project is: _no longer continue_ 
+The project was only part of the training and I do not see the need to extend it with further facilities
+
+## Inspiration
+The project was created during the course in which I participated - www.jupiter.czest.pl
