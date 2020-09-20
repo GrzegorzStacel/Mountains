@@ -104,7 +104,7 @@ function construct_JSON() {
         inject_code += "<br />";
     })
     
-    inject_code += "]" + "<br /><br /><p style='color: red; text-align: center;'>Nowo dodane punkty oznaczone na zielono należy wkleić ręcznie do globalnego obiektu gb w pliku main2.js</p>";
+    inject_code += "]" + "<br /><br /><p style='color: red; text-align: center;'>Aby po odświeżeniu przeglądarki nowo dodane punkty były dodane do obrazu należy oznaczony na zielono kod wkleić do globalnego obiektu gb w pliku main2.js</p>";
 
     return inject_code;
 }
