@@ -82,7 +82,7 @@ $(document).ready(function () {
 })
 
 function edit_on_off() {
-    $('#gory .edit').on('click', () => {
+    $('#gory .onoffswitch-checkbox').on('click', () => {
         $('#interface').toggleClass('on_interface');
         $('#cursor').toggle();
 

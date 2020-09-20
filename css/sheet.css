@@ -224,46 +224,90 @@ body {
   border-radius: 70px 0 0 70px;
 }
 
-#gory .edit {
-  position: fixed;
+#gory .onoffswitch {
+  position: absolute;
   bottom: 5%;
   right: 5%;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.7);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 15px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  width: 117px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#gory .onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#gory .onoffswitch-label {
+  display: block;
+  overflow: hidden;
   cursor: pointer;
-  z-index: 10;
-  padding: 15px;
+  border: 2px solid #999999;
+  border-radius: 20px;
 }
 
-#gory .edit div {
-  text-decoration: none;
-  color: #fff;
+#gory .onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+#gory .onoffswitch-inner:before,
+#gory .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
   font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: 2px solid white;
-  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#gory .edit:hover {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+#gory .onoffswitch-inner:before {
+  content: "Edit ON";
+  padding-left: 10px;
+  background-color: #48A369;
+  color: #FFFFFF;
 }
 
-#gory .edit:hover div {
-  color: yellow;
-  border-bottom: 2px solid yellow;
+#gory .onoffswitch-inner:after {
+  content: "Edit OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+
+#gory .onoffswitch-switch {
+  display: block;
+  width: 21px;
+  margin: 6.5px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 83px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+#gory .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+#gory .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
 }
 
 @-webkit-keyframes animate_hover {

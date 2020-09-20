@@ -205,38 +205,87 @@ body {
         }
     }
 
-    .edit {
-        position: fixed;
+    .onoffswitch {
+        position: absolute;
         bottom: 5%;
         right: 5%;
-        height: 50px;
-        background: rgba(#000, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        transition: 0.3s;
+        width: 117px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .onoffswitch-checkbox {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .onoffswitch-label {
+        display: block;
+        overflow: hidden;
         cursor: pointer;
-        z-index: 10;
-        padding: 15px;
+        border: 2px solid #999999;
+        border-radius: 20px;
+    }
 
-        div {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            letter-spacing: 1px;
-            border-bottom: 2px solid white;
-            text-transform: uppercase;
-        }
+    .onoffswitch-inner {
+        display: block;
+        width: 200%;
+        margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
 
-        &:hover {
-            transform: translateY(2px);
+    .onoffswitch-inner:before,
+    .onoffswitch-inner:after {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 30px;
+        padding: 0;
+        line-height: 30px;
+        font-size: 14px;
+        color: white;
+        font-family: Trebuchet, Arial, sans-serif;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
 
-            div {
-                color: yellow;
-                border-bottom: 2px solid yellow;
-            }
-        }
+    .onoffswitch-inner:before {
+        content: "Edit ON";
+        padding-left: 10px;
+        background-color: #48A369;
+        color: #FFFFFF;
+    }
+
+    .onoffswitch-inner:after {
+        content: "Edit OFF";
+        padding-right: 10px;
+        background-color: #EEEEEE;
+        color: #999999;
+        text-align: right;
+    }
+
+    .onoffswitch-switch {
+        display: block;
+        width: 21px;
+        margin: 6.5px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 83px;
+        border: 2px solid #999999;
+        border-radius: 20px;
+        transition: all 0.3s ease-in 0s;
+    }
+
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+        right: 0px;
     }
 }
 
