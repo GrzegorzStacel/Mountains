@@ -225,7 +225,7 @@ body {
 }
 
 #gory .onoffswitch {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   right: 5%;
   width: 117px;
