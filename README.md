@@ -1,5 +1,6 @@
 # #2 Mountains - adding points to the image 
 > A mechanism for adding points to the image that generates its coordinates along with a possible name and a link to that point. 
+provo.webd.pro/mountains/
 
 ## Table of contents
 * [General info](#general-info)
