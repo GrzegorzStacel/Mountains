@@ -36,7 +36,7 @@ JSON code will be generated, which we can copy to our project.
 
 ## Status
 Project is: _no longer continue_ 
-The project was only part of the training and I do not see the need to extend it with further facilities
+> The project was only part of the training and I do not see the need to extend it with further facilities
 
 ## Inspiration
 The project was created during the course in which I participated - www.jupiter.czest.pl
